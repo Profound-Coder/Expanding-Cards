@@ -22,6 +22,18 @@ main {
   width: 75vw;
 }
 
+/* Adding background images to each card */
+.item-one {
+  background-image: url("https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+.item-two {
+  background-image: url("https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.item-three {
+  background-image: url("https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+/* Card */
 .card {
   background-size: cover;
   background-position: center;
@@ -34,17 +46,7 @@ main {
   transition: all 0.5s ease-out;
 }
 
-/* Adding background images to each card */
-.item-one {
-  background-image: url("https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-}
-.item-two {
-  background-image: url("https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-}
-.item-three {
-  background-image: url("https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-}
-
+/* Card Styles when active */
 .card.active {
   flex: 3;
 }
