@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* This is for centering items on the page */
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+/* Card Container */
+
+.wrapper {
+  display: flex;
+  width: 75vw;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 100px;
+  margin: 0.5em;
+  height: 60vh;
+  flex: 0.3;
+  transition: all 0.5s ease-out;
+}
+
+/* Adding background images to each card */
+.item-one {
+  background-image: url("https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+.item-two {
+  background-image: url("https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.item-three {
+  background-image: url("https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.card.active {
+  flex: 3;
+}
